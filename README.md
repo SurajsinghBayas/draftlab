@@ -4,8 +4,6 @@ A GPT-powered writing assistant that also checks its own work. DraftLab turns a 
 
 ![Next.js 16](https://img.shields.io/badge/Next.js-16-black) ![React 19](https://img.shields.io/badge/React-19-61dafb) ![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6) ![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4-38bdf8)
 
-![DraftLab Studio with a brief, a generated draft, and its quality check](docs/img/studio.png)
-
 ## Features
 
 - **Structured briefs:** set the document type, topic, audience, tone, and length, with optional instructions and key facts.
@@ -116,7 +114,7 @@ These are the same on every platform.
 | `npm test` | Runs the unit tests for the deterministic measures |
 | `npm run typecheck` | Checks types. Run `npm run dev` or `npm run build` once first, because Next.js generates some of them |
 | `npm run eval` | Reruns the full evaluation, about 20 minutes on a rate-limited Voyage key |
-| `npm run report` | Rebuilds `docs/report.pdf` |
+| `npm run report` | Rebuilds `docs/report.pdf` from the screenshots in `docs/img/` |
 
 ## Pages
 
@@ -161,12 +159,11 @@ src/lib/            Prompts, model client, retrieval, text utilities, and bias c
 src/lib/evaluate/   One module for each of the five measures
 eval/               Test prompts, evaluation runner, and report generator
 data/               Saved evaluation results
-docs/               Case study report, blank template, and screenshots
 ```
 
 ## Case study report
 
-`docs/report.pdf` is the completed report, and `docs/report-template.pdf` is the blank college template. Group Number, Subject, and Submitted To stay blank until you supply them:
+The report and its screenshots live in a local `docs/` folder that git ignores. To rebuild `docs/report.pdf`, you need `docs/img/studio.png` and `docs/img/analysis.png`. Group Number, Subject, and Submitted To stay blank until you supply them:
 
 ```bash
 npx playwright install chromium   # first time only
