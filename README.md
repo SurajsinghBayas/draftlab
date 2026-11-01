@@ -182,11 +182,6 @@ npm run report -- --group 7 --subject "Your subject" --to "Prof. Name"
 - **Privacy:** generating sends the brief to the model provider. Checking also sends claims and topic to Wikipedia search, and paragraphs to Voyage AI. Do not use confidential content.
 - **Prototype scope:** the rate limiter is per process and in memory, there are no accounts, and drafts are stored only in the browser's local storage.
 
-## Team
+## Author
 
-Case study for the Department of Artificial Intelligence & Data Science, N. K. Orchid College of Engineering & Technology, Solapur, academic year 2026–27.
-
-- Pankaj Sakhare
-- Vardhan Yemul
-- Ganesh Bansode
-- Om Bise
+Built by [SurajsinghBayas](https://github.com/SurajsinghBayas).
